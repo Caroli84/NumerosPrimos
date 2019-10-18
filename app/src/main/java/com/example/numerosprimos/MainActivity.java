@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 entrada.getText().toString();
                 int num=Integer.parseInt(entrada.getText().toString());
+
+                String ed1=entrada.getText().toString();
+                int size=entrada.length();
+                if(size<1){Toast.makeText(getApplicationContext(),"como mínimo 1 número",Toast.LENGTH_LONG).show();}
+                if(size>4){Toast.makeText(getApplicationContext(),"sólo 4 dígitos",Toast.LENGTH_LONG).show();}
+                if(num<0){Toast.makeText(getApplicationContext(),"sólo positivos",Toast.LENGTH_SHORT).show();}
+
+
                 int result=MainActivity.numPrimoSegunPuesto(num);
                 salida.setText(String.valueOf(result));
 

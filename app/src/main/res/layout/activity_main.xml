@@ -30,6 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_below="@id/introtexto"
+        android:maxLength="4"
+        android:digits="0123456789"
         android:ems="10"
         android:inputType="number"
         android:hint="número" />
