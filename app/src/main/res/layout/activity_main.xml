@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/introtexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Programa que introduces un número y te devuelve su primo"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/introtexto"
+        android:text="Introduce un número:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/introcampo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/introtexto"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="número" />
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/introtexto"
+        android:text="Resultado:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/introcampo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/introtexto"
+        android:ems="10"
+        android:hint="Resultado"
+        android:inputType="number"
+        />
+
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="110dp"
+        android:layout_below="@id/introtexto"
+        android:background="@drawable/button_round"
+        android:text="CALCULAR" />
+
+
+</LinearLayout>
